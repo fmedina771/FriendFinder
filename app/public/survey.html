@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Survey</title>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
 <body>
-This is the servey page
-	
+    <div class="container">
+        <h1>Survey Questions</h1>
+        <a class="btn btn-primary btn-lg" href="./" role="button"> <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> Home</a>
+        <hr>
+        <h3>
+        <strong>About You</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to Image (Required)</h4>
+        <input type="text" id="image" class="form-control" required>
+        <hr>
+        <!--Question 1-->
+        <strong>Question 1</strong>
+        <h4>Your mind is always buzzing about cold watermelon</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q1">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 2-->
+        <strong>Question 2</strong>
+        <h4>I love social media</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q2">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 3-->
+        <strong>Question 3</strong>
+        <h4>I rather be outdoors than being in the office</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q3">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 4-->
+        <strong>Question 4</strong>
+        <h4>Sometimes I like to yell random things out loud to sound smart</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q4">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 5-->
+        <strong>Question 5</strong>
+        <h4>I prefer Mac over Windows</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q5">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 6-->
+        <strong>Question 6</strong>
+        <h4>I love to travel</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q6">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 7-->
+        <strong>Question 7</strong>
+        <h4>JavaScript is the best thing ever invented</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q7">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 8-->
+        <strong>Question 8</strong>
+        <h4>I wish I could win the lottery so I can have a lot of land</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q8">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 9-->
+        <strong>Question 9</strong>
+        <h4>Rutgers University is the best</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q9">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <!--Question 10-->
+        <strong>Question 10</strong>
+        <h4>I use Sublime Text</h4>
+        <div class="form-group" style="width: 155px;">
+            <select class="form-control" id="q10">
+                <option value="" selected disabled>Make Selection...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="glyphicon glyphicon-ok-circle"></i> SUBMIT
+        </button>
+        <br/>
+
+    </div>
 </body>
+
 </html>
