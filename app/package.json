@@ -1,0 +1,22 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "compatibility-based \"FriendFinder\" application ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmedina771/FriendFinder.git"
+  },
+  "author": "Fernando Medina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmedina771/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/fmedina771/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2"
+  }
+}
