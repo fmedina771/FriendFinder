@@ -38,7 +38,15 @@ app.post("/api/friends", function(req, res) {
 
 	var newFriend = req.body;
 
-	console.log(newFriend)
+
+	// console.log(newFriend)
+  //
+  console.log("The scores before pushing: " + newFriend.scores)
+
+  // const newScores = newFriend.scores
+  // for (var i = 0; i < newScores.length; i++) {
+  //   newScores
+  // }
 
 	friends.push(newFriend)
 

@@ -173,10 +173,9 @@ $("#submit").on("click", function(event) {
     var newFriend = {
         name: $("#name").val().trim(),
         image: $("#image").val().trim(),
-        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ],
+        scores: [parseInt($("#q1").val()), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ],
 
     };
-
 
 
     // Question: What does this code do??
