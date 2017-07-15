@@ -170,16 +170,27 @@
 $("#submit").on("click", function(event) {
     event.preventDefault();
 
-    var newFriend = {
+    const answer1 = parseInt($("#q1").val())
+    const answer2 = parseInt($("#q2").val())
+    const answer3 = parseInt($("#q3").val())
+    const answer4 = parseInt($("#q4").val())
+    const answer5 = parseInt($("#q5").val())
+    const answer6 = parseInt($("#q6").val())
+    const answer7 = parseInt($("#q7").val())
+    const answer8 = parseInt($("#q8").val())
+    const answer9 = parseInt($("#q9").val())
+    const answer10 = parseInt($("#q10").val())
+
+    var submittedAnswers = {
         name: $("#name").val().trim(),
         image: $("#image").val().trim(),
-        scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ],
+        scores: [answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,],
 
     };
 
 
     // Question: What does this code do??
-    $.post("/api/friends", newFriend)
+    $.post("/api/friends", submittedAnswers)
         .done(function(data) {
             console.log(data);
             alert("Adding entry...");
